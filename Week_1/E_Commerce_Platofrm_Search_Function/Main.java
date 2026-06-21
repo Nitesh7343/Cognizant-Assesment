@@ -21,7 +21,7 @@ public class Main {
 
     public static int LinearSearch(Product[] product,int productID) {
 
-        for(int i = 1; i < product.length;i++) {
+        for(int i = 0; i < product.length;i++) {
             if(productID == product[i].productID) {
                 return i;
             }
