@@ -1,4 +1,4 @@
-package Inventory_Management_System;
+//package Inventory_Management_System;
 
 import java.util.HashMap;
 public class InventoryManager {
@@ -31,7 +31,7 @@ public class InventoryManager {
 
     public void displayProduct(int id) {
         Product product = inventory.get(id);
-        product.toString();
+        System.out.println(product);
     }
 
     public void deleteProduct(int id) {
