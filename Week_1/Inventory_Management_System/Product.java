@@ -1,5 +1,6 @@
+package Inventory_Management_System;
 
-class Product {
+public class Product {
     private int productID;
     private String productName;
     private int quantity;
@@ -36,10 +37,4 @@ class Product {
                ", Price: " + price;
     }
 
-}
-
-public class Inventory_Management_System {
-    public static void main(String[] args) {
-
-    }
 }
