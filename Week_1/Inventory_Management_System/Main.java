@@ -15,7 +15,7 @@ public class Main {
         manager.updateProduct(1,"PS5",37,55_000);
         manager.deleteProduct(2);
         manager.addProduct(new Product(5,"IPAD",3,70_000));
-        manager.displayProduct(3);
+        //manager.displayProduct(3);
 
         manager.displayInventory();
     }
