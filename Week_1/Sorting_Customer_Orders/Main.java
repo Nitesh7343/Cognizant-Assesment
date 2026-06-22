@@ -11,6 +11,7 @@ public class Main {
             orders[i] = new Order(IDs[i],names[i],totalPrice[i]);
         }
 
+        //bubbleSort(orders);
         quickSort(orders);
 
         for(Order od : orders) System.out.println(od);
