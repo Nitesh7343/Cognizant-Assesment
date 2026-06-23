@@ -25,3 +25,8 @@ Limitations of Arrays
     * Insertion and deletion can be costly.
     * Searching is slow for large unsorted arrays.
 
+When to Use Arrays
+
+    * The number of records is known beforehand.
+    * Fast access by index is required.
+    * Insertions and deletions are infrequent.
