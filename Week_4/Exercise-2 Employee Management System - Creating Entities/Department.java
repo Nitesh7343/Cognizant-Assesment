@@ -23,6 +23,4 @@ public class Department {
 
     @OneToMany(mappedBy = "department", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Employee> employees;
-
-    //Additional constructors, methods, etc., may be added here as per need
 }

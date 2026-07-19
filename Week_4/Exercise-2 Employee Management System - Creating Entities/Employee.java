@@ -24,6 +24,4 @@ public class Employee {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "department_id")
     private Department department;
-
-    //Additional constructors, methods, etc., may be added here as per need
 }
