@@ -10,6 +10,7 @@ https://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean
             id="country"
             class="com.cognizant.spring_learn.model.Country">
+<!--            scope="prototype">-->
 
         <property
                 name="code"

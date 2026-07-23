@@ -19,8 +19,8 @@ public class SpringLearnApplication implements CommandLineRunner {
 			LoggerFactory.getLogger(SpringLearnApplication.class);
 
 	public void run(String... args) throws Exception {
-		//displayDate();
-		displayCountry();
+		//displayDate(); //exercise1
+		displayCountry(); // exrecise2
 	}
 
 	public static void main(String[] args) {
@@ -38,11 +38,15 @@ public class SpringLearnApplication implements CommandLineRunner {
 
 	public void displayCountry() throws Exception{
 		ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
-		Country country = context.getBean("country", Country.class);
 
+		Country country1 = context.getBean("country", Country.class);
+		Country country2 = context.getBean("country",Country.class);
 
-		System.out.println(country.getCode());
-		System.out.println(country.getName());
+		System.out.println(country1);
+		System.out.println(country2);
+		System.out.println(country1 == country2);
+		//without configuring prototype in country.xml it will give yes because default score of bean is singleton so it will return one object everytime.
+		//after adding scope = prototype in country.xml it will give false bacause prototype scope of beam will create a new object everytime then return it.
 	}
 
 }
