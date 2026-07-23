@@ -20,6 +20,17 @@ https://www.springframework.org/schema/beans/spring-beans.xsd">
                 name="name"
                 value="India"/>
 
+        <property name="states">
+            <list>
+                <value>Uttar Pradesh</value>
+                <value>Goa</value>
+                <value>Maharashtra</value>
+                <value>Delhi</value>
+                <value>Karnataka</value>
+            </list>
+        </property>
+
+
     </bean>
 
 </beans>
